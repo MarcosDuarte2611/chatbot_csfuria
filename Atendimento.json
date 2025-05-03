@@ -1,0 +1,126 @@
+{
+  "id": "9995f4a0-cf06-4981-b2f7-7b0ff6927d40",
+  "name": "Atendimento",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "opcoes"
+  ],
+  "contexts": [
+    "opcoes"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "opcoes",
+          "dataType": "@opcoes",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$opcoes",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Sinto muito por não poder te ajudar, vou chamar um atendente pra falar com você, espera só um momentinho que já vão te atender."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ajuda",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "f4e49cc0-8d81-462a-8529-acd6b69f5c5e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "atendente",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "69e4e57f-48a8-4592-b43c-efc93f6b5cd0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "atendimento",
+          "userDefined": false,
+          "alias": "opcoes",
+          "meta": "@opcoes"
+        }
+      ],
+      "count": 0,
+      "id": "54332b38-0f98-452f-887c-08aa1a4b05f7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3",
+          "userDefined": false,
+          "alias": "opcoes",
+          "meta": "@opcoes"
+        }
+      ],
+      "count": 0,
+      "id": "5d09e4c7-84ee-4949-8cf9-3bdcc726cfa2",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

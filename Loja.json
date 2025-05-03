@@ -1,0 +1,97 @@
+{
+  "id": "cf944a05-4c51-4bde-a667-ac1943bc7708",
+  "name": "Loja",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "opcoes"
+  ],
+  "contexts": [
+    "opcoes"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "loja",
+          "lifespan": 9
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "opcoes",
+          "dataType": "@opcoes",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$opcoes",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Opa, então você está interessado(a) em se vestir como um verdadeiro(a) FURIOSO(A)? Selecione que opção mais se adeque a sua vontade."
+          ]
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "1. Uniformes\n2. Casual\n3. Promoções"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "loja",
+          "userDefined": false,
+          "alias": "opcoes",
+          "meta": "@opcoes"
+        }
+      ],
+      "count": 0,
+      "id": "3dee189d-8a2e-409b-a970-9184e073efc8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b0782dc7-347e-414a-9e95-b8fb90847be6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

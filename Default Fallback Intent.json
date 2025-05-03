@@ -1,0 +1,77 @@
+{
+  "id": "eb77b83e-630e-4dc2-9df9-890393e3e18f",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": true,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.unknown",
+      "affectedContexts": [
+        {
+          "name": "opcoes",
+          "lifespan": 9
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Salve FURIOSO! Por favor, selecione a opção que deseja falar sobre hoje."
+          ]
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "1. Placar\n2. Loja\n3. Atendimento\n\nDigite \"0\" ou \"Voltar\" a qualquer momento para retornar para esse menu."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "voltar",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7732fb38-d7e0-4115-b14e-55435dfa4fab",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "0",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "96bb1a5c-8eb1-4eea-8f6e-01c645e8eaf3",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

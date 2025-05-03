@@ -1,0 +1,77 @@
+{
+  "id": "a6fce2b0-9a79-4486-bcf4-e66552b9231c",
+  "name": "Placar",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "opcoes"
+  ],
+  "contexts": [
+    "opcoes"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "opcoes",
+          "dataType": "@opcoes",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$opcoes",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Placar",
+          "userDefined": false,
+          "alias": "opcoes",
+          "meta": "@opcoes"
+        }
+      ],
+      "count": 0,
+      "id": "d0e1e680-ba63-4b9d-888c-c6f3106295e5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "dddb0625-9e98-4a8f-9a53-ec74478d48fa",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": true,
+  "webhookUsed": true
+}

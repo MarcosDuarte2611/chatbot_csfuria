@@ -1,0 +1,99 @@
+{
+  "id": "82d16d4e-7026-43ee-96ae-4fdc87724efb",
+  "name": "LojaCasual",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "loja"
+  ],
+  "contexts": [
+    "loja"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "loja",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "loja",
+          "dataType": "@loja",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$loja",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Quer dar um rolê no conforto que só um FURIOSO pode sentir? Se liga nesses outfits casuais pro seu dia a dia!"
+          ]
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "https://www.furia.gg/produtos/colecoes"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "casual",
+          "userDefined": false,
+          "alias": "loja",
+          "meta": "@loja"
+        }
+      ],
+      "count": 0,
+      "id": "bfd83bdf-83d9-4281-907f-18b598e247f0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2",
+          "userDefined": false,
+          "alias": "loja",
+          "meta": "@loja"
+        }
+      ],
+      "count": 0,
+      "id": "a8d97d37-f9f3-4e5a-9064-03f5af47d7e5",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

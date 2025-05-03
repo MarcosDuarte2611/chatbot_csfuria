@@ -1,0 +1,313 @@
+{
+  "id": "68f90bf0-8360-4240-b7f7-7c60f2e9f76f",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "opcoes",
+          "lifespan": 9
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "nome",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Fala, FURIOSO! Como posso te chamar?"
+          ],
+          "value": "$nome",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "location",
+          "dataType": "@sys.location",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$location",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "date-time",
+          "dataType": "@sys.date-time",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$date-time",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "person",
+          "dataType": "@sys.person",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$person",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "time-period",
+          "dataType": "@sys.time-period",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$time-period",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Salve $nome! Por favor, selecione a opção que deseja falar sobre hoje."
+          ]
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "1. Placar\n2. Loja\n3. Atendimento\n\nDigite \"0\" ou \"Voltar\" a qualquer momento para retornar para esse menu."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ba",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "noite",
+          "userDefined": false,
+          "alias": "time-period",
+          "meta": "@sys.time-period"
+        }
+      ],
+      "count": 0,
+      "id": "336282c2-9430-4722-9b77-af7adda39285",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ba",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "tarde",
+          "userDefined": false,
+          "alias": "date-time",
+          "meta": "@sys.date-time"
+        }
+      ],
+      "count": 1,
+      "id": "265ac1ee-d9c9-400f-9458-6e3ba7361c09",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "bo",
+          "userDefined": false,
+          "alias": "person",
+          "meta": "@sys.person"
+        },
+        {
+          "text": " dia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2ceb7de7-3021-4d59-9f48-2f3a4a140dcc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "boa ",
+          "userDefined": false
+        },
+        {
+          "text": "noite",
+          "userDefined": false,
+          "alias": "date-time",
+          "meta": "@sys.date-time"
+        }
+      ],
+      "count": 0,
+      "id": "bb24dee1-211b-48d8-84d1-75fa64b313e7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "boa ",
+          "userDefined": false
+        },
+        {
+          "text": "tarde",
+          "userDefined": false,
+          "alias": "date-time",
+          "meta": "@sys.date-time"
+        }
+      ],
+      "count": 0,
+      "id": "9955564e-0387-48fb-a542-ddfb64de4485",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "bom dia",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b80362b4-15fc-464a-97ba-986ba2f64f5e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "alô",
+          "userDefined": false,
+          "alias": "location",
+          "meta": "@sys.location"
+        }
+      ],
+      "count": 0,
+      "id": "73b145b8-1570-4521-b084-f0d5aa8b70f3",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "olá",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9a8f70c1-123f-4145-9d80-c8b50958349f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oi",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3af2c594-c6c1-4890-98d2-fbeafbce8f33",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "opa",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "54069c09-ea96-44eb-afe0-2f66ba606803",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "oi tudo bem",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f23645e7-1c87-416e-b12f-dbacb284ba81",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "e aí",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0ccbeb64-18ad-4cb3-a7cf-56092482a772",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

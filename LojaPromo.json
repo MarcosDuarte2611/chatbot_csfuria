@@ -1,0 +1,136 @@
+{
+  "id": "fdf3a6bc-007c-4074-836f-42fac939ea31",
+  "name": "LojaPromo",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "loja"
+  ],
+  "contexts": [
+    "loja"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "loja",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "opcoes",
+          "dataType": "@opcoes",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$opcoes",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "loja",
+          "dataType": "@loja",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$loja",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "O gerente separou umas peças no precinho pra qualquer fã da FURIA poder aproveitar, olha só as ótimas promoções do momento!"
+          ]
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "https://www.furia.gg/outlet"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "promo",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1c8ac584-fd25-43fe-b830-b9a0ec7b99c4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "promoções",
+          "userDefined": false,
+          "alias": "loja",
+          "meta": "@loja"
+        }
+      ],
+      "count": 0,
+      "id": "7c80d03c-3d57-4104-ba3e-9abe56bc0884",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "promoção",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "07ae9a29-f512-45da-bfdc-d626ee579985",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3",
+          "userDefined": false,
+          "alias": "opcoes",
+          "meta": "@opcoes"
+        }
+      ],
+      "count": 0,
+      "id": "9af624e5-3cef-41cf-90ac-12558cb3a061",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

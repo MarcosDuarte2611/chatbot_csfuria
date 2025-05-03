@@ -1,0 +1,112 @@
+{
+  "id": "42c807d4-2d24-4ab1-908f-112cf21fe3f2",
+  "name": "LojaUni",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "loja"
+  ],
+  "contexts": [
+    "loja"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "loja",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "opcoes",
+          "dataType": "@opcoes",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$opcoes",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "loja",
+          "dataType": "@loja",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$loja",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Então você quer se vestir como um verdadeiro campeão? Dá uma olhada nesses uniformes FURIOSOS que eu achei pra você!"
+          ]
+        },
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "https://www.furia.gg/produtos/collabs/adidas"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "uniformes",
+          "userDefined": false,
+          "alias": "loja",
+          "meta": "@loja"
+        }
+      ],
+      "count": 0,
+      "id": "5267132c-9802-4423-b989-45c9380add3c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "1",
+          "userDefined": false,
+          "alias": "opcoes",
+          "meta": "@opcoes"
+        }
+      ],
+      "count": 0,
+      "id": "a38c45e9-b769-40e8-ac15-f522d4c92a1e",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
